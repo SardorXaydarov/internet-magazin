@@ -279,3 +279,81 @@ body {
     transform: translateY(50%);
     top: 50%;
 }
+
+
+.register-login {
+    margin-top: 66px;
+    border-radius: 15px;
+    background: #D4E5EF;
+    display: flex;
+    align-items: center;
+    padding: 30px 40px 31px 30px;
+    gap: 18px;
+}
+
+.register-price {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+
+.register-price .rule img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.register-price .register-arrow h3 {
+    color: #023887;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.register-price .register-arrow {
+    display: flex;
+    width: 576px;
+    align-items: center;
+    position: relative;
+}
+
+.register-arrow .arrow-img {
+    position: absolute;
+    top: 50%;
+    right: 109px;
+    transform: translateY(-50%);
+}
+
+.register-arrow img {
+    width: 60px;
+    height: 100%;
+    margin-left: 44px;
+}
+
+
+.register-buttons {
+    display: flex;
+    gap: 26px;
+}
+
+.register-buttons .btnn {
+    border-radius: 30px;
+    background: #2A5391;
+    padding: 12px 46px;
+    transition: all .3s ease;
+}
+.register-buttons .btnn:hover{
+    background: #2d64b8;
+}
+.register-buttons .btn-two {
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 30px;
+    border: 2px solid #3EB40C;
+    color: #3EB40C;
+    padding: 13px 50px;
+    transition: all .3s ease;
+}
+.register-buttons .btn-two:hover{
+    color: #fff;
+    background: #3EB40C;
+}
