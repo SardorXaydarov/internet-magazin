@@ -341,9 +341,11 @@ body {
     padding: 12px 46px;
     transition: all .3s ease;
 }
-.register-buttons .btnn:hover{
+
+.register-buttons .btnn:hover {
     background: #2d64b8;
 }
+
 .register-buttons .btn-two {
     font-size: 16px;
     font-weight: 400;
@@ -353,7 +355,111 @@ body {
     padding: 13px 50px;
     transition: all .3s ease;
 }
-.register-buttons .btn-two:hover{
+
+.register-buttons .btn-two:hover {
     color: #fff;
     background: #3EB40C;
+}
+
+/* services section styles */
+.services {
+    margin-top: 51px;
+}
+
+.services .services-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services .services-boxes .service-box {
+    display: flex;
+    padding: 39px 41px 43px 20px;
+    width: 368.678px;
+    height: 191px;
+    border-radius: 15px;
+    background: #D4E5EF;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.service-box .service-img {
+    padding: 5px;
+}
+
+.service-box .service-info {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-box .service-info h3 {
+    color: #345F99;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.service-box .service-info h4 {
+    color: #345F99;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+/* katalog section start */
+.katalog {
+    margin-top: 71px;
+}
+
+.katalog .title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.katalog .title-box .btnn {
+    padding: 17px 40px;
+    display: flex;
+    gap: 37px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+}
+
+.katalog .title-box .btnn svg {
+    width: 22px;
+    height: 22px;
+}
+
+.katalog .title-box .katalog-input {
+    width: 861px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.katalog .katalog-input input {
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #D4E5EF;
+    padding: 18px 85px 19px 68px;
+    color: #2A5391;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    line-height: 110%;
+}
+.katalog .katalog-input input ::placeholder{
+    color: #2A5391;
+    font-size: 16px;
+    font-weight: 400;
+}
+.katalog .title-box .katalog-input a {
+    position: absolute;
+    right: 66px;
 }
