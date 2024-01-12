@@ -372,7 +372,9 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
+.services-boxes::-webkit-scrollbar{
+    display: none;
+}
 .services .services-boxes .service-box {
     display: flex;
     padding: 39px 41px 43px 20px;
@@ -429,6 +431,8 @@ body {
     font-size: 16px;
     font-weight: 400;
     align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .katalog .title-box .btnn svg {
@@ -476,8 +480,10 @@ body {
 
 .katalog-boxes {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    row-gap: 20px;
 }
 
 .katalog-box__info {
@@ -545,4 +551,305 @@ body {
     background-size: cover;
     background-position: 100%;
     height: 776px;
+}
+
+
+
+/* katalog tovar modal */
+#knowPrice .modal-header,
+#knowPrice .modal-footer {
+    border-bottom: none;
+    border-top: none;
+}
+
+#knowPrice .modal-dialog {
+    width: 261px;
+    height: 548px;
+}
+
+#knowPrice .katalog-img {
+    padding: 0;
+}
+
+#knowPrice .katalog-img img {
+    width: 100%;
+}
+
+#knowPrice .modal-content {
+    border-radius: 15px;
+}
+
+#knowPrice .katalog-info {
+    position: relative;
+    padding: 38px 20px 17px 21px;
+    border-radius: 0 0 15px 15px;
+    background: #D4E5EF;
+}
+
+#knowPrice .know-price__footer {
+    position: relative;
+    padding: 15px 0 0 0;
+}
+
+#knowPrice .know-price__footer::before {
+    position: absolute;
+    bottom: 0;
+    width: 218px;
+    height: 2px;
+    top: 0;
+    content: "";
+    background: rgba(42, 83, 145, 0.10);
+}
+
+#knowPrice .katalog-info h3 {
+    color: #023887;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+#knowPrice .katalog-info .m-for {
+    margin: 14px 0 16px;
+}
+
+#knowPrice h4 {
+    color: #2A5391;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#knowPrice .funksiya {
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.funksiya .how-many {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.funksiya .how-many .minus {
+    font-weight: 600;
+}
+
+.funksiya .how-many .minus,
+.funksiya .how-many .plus {
+    color: #3EB40C;
+    font-size: 33px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.funksiya .num {
+    color: #2A5391;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 28px;
+    font-weight: 400;
+    border-radius: 30px;
+    pointer-events: none;
+    background: #E5EDF3;
+}
+
+#knowPrice .know-price__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#knowPrice .know-price__footer h3 {
+    color: #2A5391;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#knowPrice .know-price__footer span {
+    color: #3EB10C;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#knowPrice .know-price__footer .buy {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 30px;
+    background: #2A5391;
+    width: 220px;
+    height: 40px;
+    margin-bottom: 6px;
+    transition: all .3s ease;
+}
+
+#knowPrice .know-price__footer .buy:hover {
+    background: #2d64b8;
+}
+
+#knowPrice .know-price__footer .makeOffer {
+    color: #3EB40C;
+    font-size: 16px;
+    font-weight: 400;
+    width: 220px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid #3EB40C;
+    transition: all .3s ease;
+}
+
+#knowPrice .know-price__footer .makeOffer:hover {
+    background: #3EB40C;
+    color: #fff;
+}
+
+
+/* media queries */
+@media (max-width:1130px){
+    .services-boxes{
+        gap: 20px;
+    }
+    .register-login{
+        justify-content: space-between;
+    }
+    .register-price .register-arrow{
+        width: 100%;
+    }
+    .sale-scrap .title-box .title{
+        font-size: 35px;
+    }
+    .register-arrow img{
+        display: none;
+    }
+    .services-boxes .service-box h3{
+        font-size: 14px;
+    }
+    .services-boxes .service-box{
+        width: auto;
+    }
+    .services-boxes .service-box h4{
+        font-size: 14px;
+        width: 100%;
+    }
+    .service-box .service-info{
+        gap: 5px;
+    }
+
+    .katalog .title-box .katalog-input{
+        width: 700px;
+    }
+    .header-bottom .navbar-nav .nav-linkk{
+        padding: 5px 20px;
+    }
+}
+@media (max-width:991px){
+    .sale-scrap .title-box .title{
+        font-size: 30px;
+    }
+    .services-boxes{
+        overflow-x: scroll;
+    }
+    .header-bottom .navbar-nav{
+        gap: 10px;
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+    .sale-scrap .main-sale{
+        margin: 30px 0 10px 0;
+    }
+    .sale-scrap .title-box .title::before{
+        display: none;
+    }
+    .register-price{
+        gap: 10px;
+    }
+    .register-login{
+        margin-top: 41px;
+        justify-content: space-between;
+    }
+    .register-buttons .btnn{
+        padding: 10px 30px;
+    }
+    .header-bottom .navbar .nav-linkk,
+    .header-bottom .navbar .nav-linkk__green
+    {
+        display: inline-block;
+        padding: 5px 30px;
+    }   
+    .katalog .title-box{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+    .katalog .title-box .katalog-input{
+        width: 100vw;
+    }
+}
+@media (max-width:900px){
+    .register-login{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
+@media (max-width:768px){
+    .register-login{
+        padding: 20px;
+    }
+    .services .services-boxes .service-box{
+        padding-right: 20px;
+    }
+    .service-box .service-info{
+        gap: 20px;
+    }
+    .register-buttons .btnn,
+    .register-buttons .btn-two
+    {
+        padding: 10px 20px !important;
+    }
+    .register-price .register-arrow h3{
+        font-size: 15px;
+    }
+    .services-boxes .service-box h4{
+        line-height: 15px;
+    }
+    .service-box .service-info h3{
+        line-height: 15px;
+    }
+    .services-boxes .service-box{
+        gap: 0px !important;
+    }
+    .services-boxes .service-box h3{
+        font-size: 13px;
+    }
+    .services-boxes .service-box h4{
+        font-size: 11px;
+    }
+    .katalog .title-box{
+        justify-content: center;
+        align-items: center;
+    }
+    .katalog .title-box .btnn{
+        width: 50vw;
+        display: flex;
+        gap: 10px;
+    }
+    .register-buttons{
+        gap: 15px;
+    }
+}
+
+@media (max-width:500px){
+    .register-login{
+        padding: 20px 10px;
+    }
+    .katalog .title-box .btnn{
+        width: 100vw;
+        justify-content: center;
+    }
+    .register-buttons .btn-two{
+        padding: 10px 30px;
+    }
 }
