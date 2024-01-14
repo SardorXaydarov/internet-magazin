@@ -62,10 +62,6 @@ body {
     overflow: hidden;
 }
 
-.container {
-    max-width: 1170px !important;
-    padding: 0;
-}
 
 
 .btnn {
@@ -140,7 +136,7 @@ body {
     gap: 20px;
 }
 
-.top-number h3 {
+.top-number h3 a {
     color: #345F99;
     font-size: 18px;
     font-weight: 500;
@@ -189,8 +185,12 @@ body {
 }
 
 .header-bottom .container {
-    max-width: 1173px !important;
     padding: 24px 0;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .header-bottom .navbar-nav {
@@ -242,6 +242,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    gap: 14px;
     margin-top: 30px;
 }
 
@@ -252,7 +253,14 @@ body {
     line-height: 21px;
 }
 
-.main-sale h4 {
+.main-sale h5 {
+    color: #3CA722;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.main-sale h5 a {
     color: #3CA722;
     font-size: 14px;
     font-weight: 300;
@@ -283,6 +291,7 @@ body {
 
 
 .register-login {
+    justify-content: space-between;
     margin-top: 66px;
     border-radius: 15px;
     background: #D4E5EF;
@@ -312,9 +321,7 @@ body {
 
 .register-price .register-arrow {
     display: flex;
-    width: 576px;
     align-items: center;
-    position: relative;
 }
 
 .register-arrow .arrow-img {
@@ -372,9 +379,11 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.services-boxes::-webkit-scrollbar{
+
+.services-boxes::-webkit-scrollbar {
     display: none;
 }
+
 .services .services-boxes .service-box {
     display: flex;
     padding: 39px 41px 43px 20px;
@@ -426,6 +435,7 @@ body {
     padding: 17px 40px;
     display: flex;
     gap: 37px;
+    width: 279px;
     color: #FFF;
     text-align: center;
     font-size: 16px;
@@ -440,18 +450,19 @@ body {
     height: 22px;
 }
 
+
 .katalog .title-box .katalog-input {
-    width: 861px;
     position: relative;
     display: flex;
     align-items: center;
+    width: 861px;
 }
 
 .katalog .katalog-input input {
     width: 100%;
     border-radius: 30px;
     border: 1px solid #D4E5EF;
-    padding: 18px 85px 19px 68px;
+    padding: 18px 38px 19px 68px;
     color: #2A5391;
     font-size: 16px;
     font-weight: 400;
@@ -482,7 +493,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    column-gap: 20px;
+    justify-content: center;
     row-gap: 20px;
 }
 
@@ -526,12 +538,14 @@ body {
 }
 
 .katalog-box .btnn {
-    width: 220px;
     height: 40px;
     border-radius: 30px;
     background: #2A5391;
     line-height: 40px;
     margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all .3s ease;
 }
 
@@ -704,152 +718,851 @@ body {
     color: #fff;
 }
 
+.header-bottom .container {
+    justify-content: start;
+}
+
+.header-bottom .search-menu {
+    width: 100%;
+}
+
+.header-bottom .search-menu img {
+    display: none;
+}
+
+.header-bottom .title-box {
+    display: none;
+}
+
+
+
+/* MODAL ----- LOGIN */
+.modal-content {
+    border-radius: 15px;
+    background: #FFF;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    padding: 0;
+    margin: 0;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.login-dialog {
+    width: 459px;
+}
+
+.login-content {
+    padding: 49px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 459px;
+}
+
+.login-content .login-header {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-header .header-close__btn {
+    width: 100%;
+    text-align: right;
+}
+
+.modal-header .header-close__btn button {
+    height: 15px;
+    padding: 0;
+    line-height: 13px;
+}
+
+.login-header .header-login h2 {
+    color: #295491;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.login-body {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-body__info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.login-body__info h3 {
+    color: #295491;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    width: 335px;
+    margin: 0 auto;
+}
+
+.login-body__info h4 {
+    color: #3EB20C;
+    text-align: center;
+    width: 385px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.login-body__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    display: flex;
+}
+
+.login-body__inputs input {
+    border-radius: 30px;
+    color: #295491;
+    font-size: 16px;
+    font-weight: 300;
+    background: #D4E5EF;
+    width: 100%;
+    padding: 19px 0px 18px 22px;
+    border: none;
+}
+
+.login-body__inputs .password {
+    border: none;
+}
+
+.login-body__inputs .password input {
+    border-radius: 30px;
+    padding: 19px 0px 18px 22px !important;
+    background: #D4E5EF;
+    width: 100%;
+    padding: 19px 18px 0 22px;
+    border: none;
+}
+
+
+.login-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-footer .btnn {
+    padding: 17px 40px;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.login-footer .forget {
+    color: #295491;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+/* MODAL -------- FORGET */
+.forget-dialog {
+    width: 459px;
+    height: auto;
+}
+
+.forget-content {
+    padding: 50px;
+    gap: 20px;
+}
+
+.forget-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.forget-header h2 {
+    color: #295491;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.forget-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.forget-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.forget-input input {
+    border-radius: 30px;
+    background: #D4E5EF;
+    color: #295491;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 19px 0 18px 22px;
+    border: none;
+
+    outline: none;
+    width: 100%;
+}
+
+.modal-body input::placeholder {
+    color: #295491;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.forget-body h3 {
+    color: #295491;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    width: 335px;
+}
+
+.forget-body h4 {
+    color: #3EB20C;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    width: 385px;
+}
+
+
+.forget-footer .btnn {
+    width: 100%;
+    padding: 17px 40px;
+}
+
+
+
+
+/* MODAL ---------- REGISTER */
+.register-dialog {
+    width: 786px;
+}
+
+.register-content {
+    padding: 50px 44px;
+    width: 786px;
+}
+
+.register-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.register-close__btn {
+    justify-content: start;
+    width: 100%;
+    display: flex;
+}
+
+.register-header h2 {
+    color: #295491;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.register-body__info h3 {
+    color: #295491;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.register-body__info h4 {
+    color: #3EB20C;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.register-body__inputs {
+    margin-top: 35px;
+}
+
+.register-body__inputs {
+    justify-content: start;
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-body__inputs .row {
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+    margin-top: 0;
+}
+
+.register-body__inputs .row .col-6 h4 {
+    color: #295491;
+    font-size: 16px;
+    margin-left: 39px;
+    font-weight: 400;
+}
+
+.register-body__inputs input {
+    border-radius: 30px;
+    background: #D4E5EF;
+    color: #295491;
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+    padding: 19px 0 18px 22px;
+    width: 100%;
+}
+
+.register-body__inputs input::placeholder {
+    color: #295491;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.col-6 {
+    padding: 0;
+}
+
+.register-footer {
+    justify-content: start;
+    margin-top: 20px;
+}
+
+.register-footer .row {
+    width: 100%;
+}
+
+.register-footer .btnn {
+    padding: 17px 40px;
+    width: 100%;
+}
+
+.register-footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register-footer__info h3,
+.register-footer__info h4 {
+    color: #2A5391;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.register-footer__info h3 span,
+.register-footer__info h4 span {
+    color: #3CAF0E;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+
+.rtwo-dialog {
+    width: 834px;
+    height: auto;
+}
+
+.rtwo-content {
+    width: 834px;
+    padding: 97px 70px 98px 70px;
+    text-align: center;
+}
+
+.rtwo-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.rtwo-body svg {
+    width: 100%;
+    margin-bottom: 23px;
+}
+
+.rtwo-body h3 {
+    color: #295491;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 129.188%;
+}
+
+.rtwo-body h4 {
+    color: #295491;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 129.188%;
+}
+
+/* show password input */
+.password {
+    position: relative;
+}
+
+
+.password img {
+    position: absolute;
+    width: 24px;
+    cursor: pointer;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /* media queries */
-@media (max-width:1130px){
-    .services-boxes{
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1170px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media (max-width:1400px) {
+
+
+    .katalog .title-box .katalog-input {
+        width: 820px;
+    }
+
+    .service-box {
+        width: 350px !important;
+    }
+
+    .katalog .title-box .btnn {
+        width: 250px;
+        padding-left: 30px;
+        padding-right: 30px;
         gap: 20px;
     }
-    .register-login{
-        justify-content: space-between;
+
+    .katalog-boxes .katalog-box,
+    .katalog-box .katalog-box__img,
+    .katalog-box .katalog-box__img img {
+        width: 250px;
     }
-    .register-price .register-arrow{
-        width: 100%;
-    }
-    .sale-scrap .title-box .title{
-        font-size: 35px;
-    }
-    .register-arrow img{
+}
+
+@media (max-width:1200px) {
+    .register-arrow img {
         display: none;
     }
-    .services-boxes .service-box h3{
+
+    .header-top .container {
+        gap: 0px;
+    }
+
+    .header-top__socials {
+        gap: 0px;
+        padding: 0;
+    }
+
+    .search-icon img {
+        display: none;
+    }
+
+    .service-box {
+        width: 300px !important;
+    }
+
+    .katalog .title-box .katalog-input {
+        width: 650px;
+    }
+
+    .katalog-boxes {
+        justify-content: center;
+        column-gap: 15px;
+    }
+
+    .katalog-boxes .katalog-box,
+    .katalog-box .katalog-box__img,
+    .katalog-box .katalog-box__img img {
+        width: 220px;
+    }
+
+    .katalog-box__info {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-bottom .navbar-nav .nav-linkk {
+        padding: 5px 20px;
+    }
+
+    .services .services-boxes .service-box {
+        padding-right: 20px;
+        width: 300px;
+        gap: 10px;
+    }
+
+    .service-box .service-info {
+        gap: 0px;
+    }
+
+    .all-katalog__boxes .btnn-end .btnn {
+        width: 358px;
+    }
+}
+
+@media (max-width:1130px) {
+    .services-boxes {
+        gap: 20px;
+    }
+
+    .register-login {
+        justify-content: space-between;
+    }
+
+    .register-price .register-arrow {
+        width: 100%;
+    }
+
+    .sale-scrap .title-box .title {
+        font-size: 35px;
+    }
+
+
+
+    .services-boxes .service-box h3 {
         font-size: 14px;
     }
-    .services-boxes .service-box{
-        width: auto;
-    }
-    .services-boxes .service-box h4{
+
+
+    .services-boxes .service-box h4 {
         font-size: 14px;
         width: 100%;
     }
-    .service-box .service-info{
+
+    .service-box .service-info {
         gap: 5px;
     }
 
-    .katalog .title-box .katalog-input{
-        width: 700px;
-    }
-    .header-bottom .navbar-nav .nav-linkk{
-        padding: 5px 20px;
-    }
 }
-@media (max-width:991px){
-    .sale-scrap .title-box .title{
+
+@media (max-width:991px) {
+
+    .header-top {
+        background: #D4E5EF;
+    }
+
+    .header-logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .header-top .container {
+        border-bottom: 2px solid #023887;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    .header-top .header-logo-info h2 {
+        color: #023887;
+        letter-spacing: 0;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .top-number__socials .top-number .top-socials,
+    .top-email,
+    .search-icon,
+    .header-top__rating {
+        display: none;
+    }
+
+    .header-logo-info h3 {
+        display: none;
+    }
+
+    .header-logo-info h4 {
+        display: none;
+    }
+
+    /* header bottom */
+    .header-bottom .container {
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 10px;
+    }
+
+    .header-bottom .search-menu {
+        display: flex;
+
+    }
+
+    .header-bottom .title-box .title {
+        color: #345F99;
+        font-family: Roboto;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19.5px;
+    }
+
+    .navbar-light .navbar-toggler:focus .dn-search {
+        display: none;
+    }
+
+    .header-bottom .search-menu {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+    }
+
+    .header-bottom .search-menu img,
+    .header-bottom .title-box {
+        display: block;
+    }
+
+    .sale-scrap .title-box .title {
         font-size: 30px;
     }
-    .services-boxes{
+
+    .all-katalog__boxes .btnn-end .btnn {
+        width: 270px;
+    }
+
+    .services-boxes {
         overflow-x: scroll;
     }
-    .header-bottom .navbar-nav{
+
+    .header-bottom .navbar-nav {
         gap: 10px;
         margin-top: 20px;
         padding-left: 10px;
     }
-    .sale-scrap .main-sale{
+
+    .katalog .title-box .katalog-input {
+        width: 100% !important;
+    }
+
+    #toGithub {
+        width: 100%;
+    }
+
+    .sale-scrap .main-sale {
         margin: 30px 0 10px 0;
     }
-    .sale-scrap .title-box .title::before{
+
+    .sale-scrap .title-box .title::before {
         display: none;
     }
-    .register-price{
+
+    .register-price {
         gap: 10px;
     }
-    .register-login{
+
+    .register-login {
         margin-top: 41px;
         justify-content: space-between;
     }
-    .register-buttons .btnn{
+
+    .register-buttons .btnn {
         padding: 10px 30px;
     }
+
     .header-bottom .navbar .nav-linkk,
-    .header-bottom .navbar .nav-linkk__green
-    {
+    .header-bottom .navbar .nav-linkk__green {
         display: inline-block;
         padding: 5px 30px;
-    }   
-    .katalog .title-box{
+    }
+
+    .katalog .title-box {
         display: flex;
         flex-direction: column;
         align-items: start;
         gap: 20px;
     }
-    .katalog .title-box .katalog-input{
-        width: 100vw;
+
+    .services .services-boxes .service-box {
+        padding-top: 20px;
     }
+
+    .service-box .service-info h4 {
+        line-height: 120%;
+    }
+
 }
-@media (max-width:900px){
-    .register-login{
+
+@media (max-width:900px) {
+    .register-login {
         display: flex;
         flex-direction: column;
         align-items: start;
     }
 }
-@media (max-width:768px){
-    .register-login{
+
+@media (max-width:768px) {
+
+    .register-login {
         padding: 20px;
     }
-    .services .services-boxes .service-box{
-        padding-right: 20px;
+
+    .header-top__socials {
+        padding-left: 0;
+        padding-right: 10px;
     }
-    .service-box .service-info{
+
+    .services .services-boxes .service-box {
+        flex-direction: column;
+        padding: 25px 33px 65px 29px;
+        height: 247px;
+
+    }
+
+    .services-boxes .service-box h3 {
+        margin-top: 15px;
+        width: 175px;
+    }
+
+    .services-boxes .service-box h4 {
+        width: 166px;
+        line-height: 20px !important;
+    }
+
+    .service-box .service-info {
         gap: 20px;
     }
+
     .register-buttons .btnn,
-    .register-buttons .btn-two
-    {
+    .register-buttons .btn-two {
         padding: 10px 20px !important;
     }
-    .register-price .register-arrow h3{
+
+    .register-price .register-arrow h3 {
         font-size: 15px;
     }
-    .services-boxes .service-box h4{
+
+    .services-boxes .service-box h4 {
         line-height: 15px;
     }
-    .service-box .service-info h3{
+
+    .service-box .service-info h3 {
         line-height: 15px;
-    }
-    .services-boxes .service-box{
-        gap: 0px !important;
-    }
-    .services-boxes .service-box h3{
         font-size: 13px;
     }
-    .services-boxes .service-box h4{
-        font-size: 11px;
+
+    .services-boxes .service-box {
+        gap: 0px !important;
     }
-    .katalog .title-box{
+
+    .services-boxes .service-box h4 {
+        font-size: 14px;
+    }
+
+    .katalog .title-box {
         justify-content: center;
         align-items: center;
     }
-    .katalog .title-box .btnn{
-        width: 50vw;
+
+    .katalog .title-box .btnn {
         display: flex;
         gap: 10px;
     }
-    .register-buttons{
+
+    .register-buttons {
         gap: 15px;
     }
 }
 
-@media (max-width:500px){
-    .register-login{
+@media (max-width:500px) {
+    .register-login {
         padding: 20px 10px;
     }
-    .katalog .title-box .btnn{
-        width: 100vw;
+
+    .katalog .title-box .btnn {
+        width: 100%;
+        gap: 37px;
+        display: flex;
+        padding-left: 40px;
+        padding-right: 40px;
+        justify-content: space-between;
+    }
+
+    .register-buttons .btn-two {
+        padding: 10px 30px;
+    }
+
+    .katalog-boxes {
         justify-content: center;
     }
-    .register-buttons .btn-two{
-        padding: 10px 30px;
+
+    .all-katalog__boxes .btnn-end .btnn {
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .katalog-box__info h3 {
+        font-size: 14px;
+    }
+
+    .katalog-box__info h4,
+    .katalog-box__info h4 span {
+        font-size: 14px !important;
+    }
+
+    .katalog-boxes .katalog-box,
+    .katalog-box .katalog-box__img,
+    .katalog-box .katalog-box__img img {
+        width: 165px;
+    }
+
+    .katalog-box__info {
+        padding: 29px 12px 19px 11px;
+    }
+
+    .katalog .katalog-input input {
+        padding-right: 45px;
+        padding-left: 38px;
+    }
+
+    .katalog .title-box .katalog-input a {
+        right: 19px;
+    }
+
+    .katalog-box .btnn {
+        padding: 10px 25px;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
     }
 }
