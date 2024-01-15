@@ -851,7 +851,9 @@ input[type=number] {
 .funksiya .plus-sex,
 .funksiya .plus-seven,
 .funksiya .plus-eight,
-.funksiya .plus-nine {
+.funksiya .plus-nine,
+.funksiya .plus-ten
+{
     cursor: pointer;
 }
 
@@ -863,7 +865,9 @@ input[type=number] {
 .funksiya .minus-sex,
 .funksiya .minus-seven,
 .funksiya .minus-eight,
-.funksiya .minus-nine {
+.funksiya .minus-nine,
+.funksiya .minus-ten
+{
     cursor: pointer;
 }
 
