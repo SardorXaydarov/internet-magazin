@@ -772,6 +772,7 @@ input[type=number] {
 .product-box .product-box__buttons {
     display: flex;
     flex-direction: column;
+    gap: 6px;
 }
 
 .product-boxes {
@@ -841,6 +842,7 @@ input[type=number] {
     width: 22px;
     height: 22px;
 }
+
 .funksiya .plus,
 .funksiya .plus-two,
 .funksiya .plus-three,
@@ -849,7 +851,7 @@ input[type=number] {
 .funksiya .plus-sex,
 .funksiya .plus-seven,
 .funksiya .plus-eight,
-.funksiya .plus-nine{
+.funksiya .plus-nine {
     cursor: pointer;
 }
 
@@ -861,9 +863,10 @@ input[type=number] {
 .funksiya .minus-sex,
 .funksiya .minus-seven,
 .funksiya .minus-eight,
-.funksiya .minus-nine{
+.funksiya .minus-nine {
     cursor: pointer;
 }
+
 .funksiya .num,
 .funksiya .num-two,
 .funksiya .num-three,
@@ -872,8 +875,7 @@ input[type=number] {
 .funksiya .num-sex,
 .funksiya .num-seven,
 .funksiya .num-eight,
-.funksiya .num-nine
-{
+.funksiya .num-nine {
     color: #2A5391;
     text-align: center;
     font-size: 16px;
@@ -1343,7 +1345,102 @@ input[type=number] {
 
 
 
+/* MODAL ----------- RECOMMEND */
+.recommend-dialog {
+    width: 459px;
+}
 
+.recommend-content {
+    padding: 50px;
+    width: 459px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recommend-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recommend-content .recommend-header button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.recommend-header h3 {
+    color: #295491;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.recommend-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rbody-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rbody-info h3 {
+    color: #295491;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 129.188%;
+}
+
+.rbody-info h2 {
+    color: #3EB20C;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.rbody-howMany .title {
+    color: #2A5391;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+.rbody-howMany {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.rbody-howMany .how-many {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rbody-howMany .how-many .funksiya {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+}
+.recommend-footer .btnn{
+    width: 100%;
+    padding: 17px 40px;
+}
+.rbody-howMany .funksiya .num-ten,
+.rbody-howMany .funksiya .num-eleven {
+    border-radius: 30px;
+    background: #E5EDF3;
+    text-align: center;
+    padding: 7px 28px;
+    width: 100%;
+}
 
 /* show password input */
 .password {

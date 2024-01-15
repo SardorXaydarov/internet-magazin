@@ -192,3 +192,20 @@ minusNine.addEventListener('click', () => {
     }
 })
 
+
+const minusTen = document.querySelector('.minus-ten'),
+    numberTen = document.querySelector('.num-ten'),
+    plusTen = document.querySelector('.plus-ten');
+
+let k = 1;
+plusTen.addEventListener('click', () => {
+    k++;
+    numberTen.innerText = k;
+})
+minusTen.addEventListener('click', () => {
+    if (k >= 2) {
+        k--;
+        numberTen.innerText = k;
+    }
+})
+
